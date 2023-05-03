@@ -130,8 +130,51 @@ const NewCustomer = () => {
                 </div>
             </div>
             
+            <h3>Data Pribadi</h3>
             
-            <button>Submit</button>
+            <div class="row">
+                
+                <div class="column">
+                    <label for="agama">Agama</label>
+                    <select id='agama' placeholder='Agama' >
+                        <option>--Select Agama--</option>
+                        <option>Islam</option>
+                        <option>Kristen</option>
+                        <option>Katolik</option>
+                        <option>Budha</option>
+                        <option>Hindu</option>
+                        <option>Konghucu</option>
+                        <option>Lainnya</option>
+                    </select>
+                    
+                </div>
+
+                <div class="column">
+                    <label for="status-pernikahan">Status</label>
+                    <select id='status-pernikahan' placeholder='Status' >
+                        <option>--Status--</option>
+                        <option>Menikah</option>
+                        <option>Belum Menikah</option>
+                        <option>Cerai</option>
+                        <option>Lain - Lain</option>
+                    </select>
+                    
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <label for="tempat-lahir">Tempat Lahir: </label>
+                    <input type="text" id="tempat-lahir" placeholder="Tempat Lahir"/>
+                </div>
+                <div class="column">
+                    <label for="tanggal-lahir">Tanggal Lahir</label>
+                    <input type="date" id="tanggal-lahir" placeholder="Tanggal Lahir"/>
+                </div>
+            </div>
+            
+            
+            <button onClick={(e) => {e.preventDefault()}} >Submit</button>
         </form>
 
             

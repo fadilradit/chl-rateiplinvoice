@@ -19,37 +19,39 @@ const NewCustomer = () => {
 
             <form>
             <FaArrowLeft className='arrow-back' size={25} onClick={() => {navigate("/customer")}} />
-            <h1>Add New Customer</h1>
+            <h1>Pendaftaran Customer Baru</h1>
+            <h3>Identitas</h3>
             <div class="row">
                 <div class="column">
-                    <label for="name">Nama</label>
-                    <input type="text" id="name" placeholder="nama"/>
+                    <label for="name">No. Reservasi/ No. NUP: </label>
+                    <input type="text" id="no-nup" placeholder="No. Reservasi/ No. NUP"/>
                 </div>
                 <div class="column">
-                    <label for="unitcode">Unit Code</label>
-                    <input type="text" id="unitcode" placeholder="Unit Code here"/>
+                    <label for="unitcode">No. Customer</label>
+                    <input type="text" id="no-cusomer" placeholder="No. Customer"/>
                 </div>
             </div>
             <div class="row">
                 <div class="column">
-                    <label for="cluster">Cluster</label>
-                    <select id='cluster' placeholder='Cluster' >
-                        <option>--Select Cluster--</option>
-                        <option>Ambara</option>
-                        <option>Lenggana</option>
-                        <option>Ruko</option>
-                        <option>Kavling</option>
+                    <label for="project">Project</label>
+                    <select id='project' placeholder='Project' >
+                        <option>--Select Project--</option>
+                        <option>Mazenta</option>
                     </select>
                     
                 </div>
                 <div class="column">
-                    <label for="buildtype">Tipe Bangunan</label>
-                    <select id='buildtype' placeholder='Building Type' >
-                        <option>--Select Type--</option>
-                        <option>Type 6</option>
-                        <option>Type 7</option>
-                        <option>Kavling</option>
-                        <option>Ruko</option>
+                    <label for="sumber-data">Sumber Data</label>
+                    <select id='sumber-data' placeholder='Sumber Data' >
+                        <option>--Sumber Data--</option>
+                        <option>Walk In</option>
+                        <option>Call In</option>
+                        <option>Canvas</option>
+                        <option>Buyer Get Buyer</option>
+                        <option>Referensi</option>
+                        <option>Pembeli Lama</option>
+                        <option>eSales</option>
+                        <option>Lainnya</option>
                     </select>
                     
                 </div>
@@ -57,13 +59,74 @@ const NewCustomer = () => {
             <div class="row">
                 
                 <div class="column">
-                    <label for="LT">Luas Tanah</label>
-                    <input type="number" id="lt" placeholder="Luas Tanah"/>
+                    <label for="tipe-buyer">Tipe</label>
+                    <select id='tipe-buyer' placeholder='Tipe' >
+                        <option>--Select Tipe--</option>
+                        <option>Perorangan</option>
+                        <option>Badan Hukum</option>
+                    </select>
+                    
                 </div>
 
                 <div class="column">
-                    <label for="LB">Luas Bangunan</label>
-                    <input type="number" id="lb" placeholder="Luas Bangunan"/>
+                    <label for="warga-negara">Kewarganegaraan</label>
+                    <select id='warga-negara' placeholder='Kewarganegaraan' >
+                        <option>--Kewarganegaraan--</option>
+                        <option>WNI</option>
+                        <option>WNA</option>
+                    </select>
+                    
+                </div>
+            </div>
+
+            <div class="row">
+                
+                <div class="column">
+                    <label for="nama">Nama: </label>
+                    <input type="text" id="nama" placeholder="Nama"/>
+                </div>
+                
+            </div>
+
+            <h3>Kartu Identitas</h3>
+
+            <div class="row">
+                <div class="column">
+                    <label for="no-identitas">No. Identitas: </label>
+                    <input type="number" id="no-identitas" placeholder="No. Identitas"/>
+                </div>
+                <div class="column">
+                    <label for="alamat">Alamat</label>
+                    <input type="text" id="alamat" placeholder="Alamat"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <label for="rt-rw">RT/RW: </label>
+                    <input type="text" id="rt-rw" placeholder="RT/RW"/>
+                </div>
+                <div class="column">
+                    <label for="kelurahan">Kelurahan</label>
+                    <input type="text" id="kelurahan" placeholder="Kelurahan"/>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <label for="kecamatan">Kecamatan: </label>
+                    <input type="text" id="kecamatan" placeholder="Kecamatan"/>
+                </div>
+                <div class="column">
+                    <label for="kota-kabupaten">Kotamadya/Kabupaten</label>
+                    <input type="text" id="kota-kabupaten" placeholder="Kotamadya/Kabupaten"/>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <label for="kode-pos">Kode Pos: </label>
+                    <input type="number" id="kode-pos" placeholder="Kode Pos"/>
                 </div>
             </div>
             
@@ -71,13 +134,7 @@ const NewCustomer = () => {
             <button>Submit</button>
         </form>
 
-            {/* <form className='form-container' >
-
-                <label>Name: <input/></label>
-                <label>Name: <input/></label>
-                <label>Name: <input/></label>
-
-            </form> */}
+            
         </main>
     );
 };

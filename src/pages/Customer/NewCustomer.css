@@ -55,6 +55,10 @@ h1{
     color: #1c093c;
 }
 
+h3{
+    margin: 10px 0;
+}
+
 form{
     width: 98%;
     /* position: relative; */
@@ -68,6 +72,12 @@ form{
     grid-gap: 20px 30px;
     margin-bottom: 20px;
 }
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
 label{
     color: #1c093c;
     font-size: 14px;
@@ -81,6 +91,7 @@ input,select{
     border-radius: 5px;
     border: 1.2px solid #c4cae0;
     margin-top: 5px;
+    max-width: 550px;
 }
 textarea{
     resize: none;

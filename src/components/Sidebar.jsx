@@ -9,6 +9,9 @@ import {
     FaThList,
     FaFileInvoice
 }from "react-icons/fa";
+
+import {BsGraphUp} from "react-icons/bs"
+
 import { NavLink } from 'react-router-dom';
 
 import logoPict from '../Assets/CHL-Logo.png'
@@ -24,9 +27,9 @@ const Sidebar = ({children}) => {
             icon:<FaTh/>
         },
         {
-            path:"/customer",
-            name:"Costumer",
-            icon:<FaUserAlt/>
+            path:"/sales",
+            name:"Sales",
+            icon:<BsGraphUp/>
         },
         {
             path:"/invoice",

@@ -18,7 +18,7 @@ const NewCustomer = () => {
 
 
             <form>
-            <FaArrowLeft className='arrow-back' size={25} onClick={() => {navigate("/customer")}} />
+            <FaArrowLeft className='arrow-back' size={25} onClick={() => {navigate("/sales")}} />
             <h1>Pendaftaran Customer Baru</h1>
             <h3>Identitas</h3>
             <div class="row">
@@ -27,13 +27,13 @@ const NewCustomer = () => {
                     <input type="text" id="no-nup" placeholder="No. Reservasi/ No. NUP"/>
                 </div>
                 <div class="column">
-                    <label for="unitcode">No. Customer</label>
+                    <label for="unitcode">No. Customer: </label>
                     <input type="text" id="no-cusomer" placeholder="No. Customer"/>
                 </div>
             </div>
             <div class="row">
                 <div class="column">
-                    <label for="project">Project</label>
+                    <label for="project">Project: </label>
                     <select id='project' placeholder='Project' >
                         <option>--Select Project--</option>
                         <option>Mazenta</option>
@@ -41,7 +41,7 @@ const NewCustomer = () => {
                     
                 </div>
                 <div class="column">
-                    <label for="sumber-data">Sumber Data</label>
+                    <label for="sumber-data">Sumber Data: </label>
                     <select id='sumber-data' placeholder='Sumber Data' >
                         <option>--Sumber Data--</option>
                         <option>Walk In</option>
@@ -59,7 +59,7 @@ const NewCustomer = () => {
             <div class="row">
                 
                 <div class="column">
-                    <label for="tipe-buyer">Tipe</label>
+                    <label for="tipe-buyer">Tipe: </label>
                     <select id='tipe-buyer' placeholder='Tipe' >
                         <option>--Select Tipe--</option>
                         <option>Perorangan</option>
@@ -69,7 +69,7 @@ const NewCustomer = () => {
                 </div>
 
                 <div class="column">
-                    <label for="warga-negara">Kewarganegaraan</label>
+                    <label for="warga-negara">Kewarganegaraan: </label>
                     <select id='warga-negara' placeholder='Kewarganegaraan' >
                         <option>--Kewarganegaraan--</option>
                         <option>WNI</option>
@@ -96,7 +96,7 @@ const NewCustomer = () => {
                     <input type="number" id="no-identitas" placeholder="No. Identitas"/>
                 </div>
                 <div class="column">
-                    <label for="alamat">Alamat</label>
+                    <label for="alamat">Alamat: </label>
                     <input type="text" id="alamat" placeholder="Alamat"/>
                 </div>
             </div>
@@ -107,7 +107,7 @@ const NewCustomer = () => {
                     <input type="text" id="rt-rw" placeholder="RT/RW"/>
                 </div>
                 <div class="column">
-                    <label for="kelurahan">Kelurahan</label>
+                    <label for="kelurahan">Kelurahan: </label>
                     <input type="text" id="kelurahan" placeholder="Kelurahan"/>
                 </div>
             </div>
@@ -118,7 +118,7 @@ const NewCustomer = () => {
                     <input type="text" id="kecamatan" placeholder="Kecamatan"/>
                 </div>
                 <div class="column">
-                    <label for="kota-kabupaten">Kotamadya/Kabupaten</label>
+                    <label for="kota-kabupaten">Kotamadya/Kabupaten: </label>
                     <input type="text" id="kota-kabupaten" placeholder="Kotamadya/Kabupaten"/>
                 </div>
             </div>
@@ -135,7 +135,7 @@ const NewCustomer = () => {
             <div class="row">
                 
                 <div class="column">
-                    <label for="agama">Agama</label>
+                    <label for="agama">Agama: </label>
                     <select id='agama' placeholder='Agama' >
                         <option>--Select Agama--</option>
                         <option>Islam</option>
@@ -150,7 +150,7 @@ const NewCustomer = () => {
                 </div>
 
                 <div class="column">
-                    <label for="status-pernikahan">Status</label>
+                    <label for="status-pernikahan">Status:</label>
                     <select id='status-pernikahan' placeholder='Status' >
                         <option>--Status--</option>
                         <option>Menikah</option>
@@ -168,10 +168,98 @@ const NewCustomer = () => {
                     <input type="text" id="tempat-lahir" placeholder="Tempat Lahir"/>
                 </div>
                 <div class="column">
-                    <label for="tanggal-lahir">Tanggal Lahir</label>
+                    <label for="tanggal-lahir">Tanggal Lahir:</label>
                     <input type="date" id="tanggal-lahir" placeholder="Tanggal Lahir"/>
                 </div>
             </div>
+
+            <h3>Data NPWP</h3>
+            
+            <div class="row">
+                <div class="column" style={{flexDirection: "row", alignItems: "center", gap: "10px"}} >
+                    
+                    <input type = "checkbox"  style={{width: "20px"}} />
+                    <label for="check-same">Sama Dengan KTP </label>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <label for="nama-npwp">Nama NPWP: </label>
+                    <input type="text" id="nama-npwp" placeholder="Nama NPWP"/>
+                </div>
+                <div class="column">
+                    <label for="npwp">NPWP: </label>
+                    <input type="number" id="npwp" placeholder="NPWP"/>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <label for="alamat-npwp">Alamat NPWP: </label>
+                    <input type="text" id="alamat-npwp" placeholder="Alamat NPWP"/>
+                </div>
+                <div class="column">
+                    <label for="rt-rw-npwp">RT/RW: </label>
+                    <input type="text" id="rt-rw-npwp" placeholder="RT/RW"/>
+                </div>
+                
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <label for="kelurahan-npwp">Kelurahan:</label>
+                    <input type="text" id="kelurahan-npwp" placeholder="Kelurahan"/>
+                </div>
+                <div class="column">
+                    <label for="kecamatan-npwp">Kecamatan: </label>
+                    <input type="text" id="kecamatan-npwp" placeholder="Kecamatan"/>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <label for="kota-kabupaten-npwp">Kotamadya/Kabupaten:</label>
+                    <input type="text" id="kota-kabupaten-npwp" placeholder="Kotamadya/Kabupaten"/>
+                </div>
+            </div>
+
+            <h3>Kontak</h3>
+
+
+            <div class="row">
+                <div class="column">
+                    <label for="no-telpon">No. Telepon: </label>
+                    <input type="number" id="no-telpon" placeholder="No. Telepon"/>
+                </div>
+                <div class="column">
+                    <label for="no-hp1">No. HP 1: </label>
+                    <input type="number" id="no-hp1" placeholder="No. HP 1"/>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="no-hp2">No. HP 2: </label>
+                    <input type="number" id="no-hp2" placeholder="No. HP 2"/>
+                </div>
+                <div class="column">
+                    <label for="no-fax">No. Fax: </label>
+                    <input type="number" id="no-fax" placeholder="No. Fax"/>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="email">Alamat Email: </label>
+                    <input type="email" id="email" placeholder="Alamat Email"/>
+                </div>
+                
+            </div>
+
+
             
             
             <button onClick={(e) => {e.preventDefault()}} >Submit</button>

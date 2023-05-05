@@ -256,7 +256,124 @@ const NewCustomer = () => {
                     <label for="email">Alamat Email: </label>
                     <input type="email" id="email" placeholder="Alamat Email"/>
                 </div>
+            </div>
+
+            <h3>Alamat Surat Menyurat</h3>
+
+            <div class="row">
+                <div class="column" style={{flexDirection: "row", alignItems: "center", gap: "10px"}} >
+                    
+                    <input type = "checkbox"  style={{width: "20px"}} />
+                    <label for="check-same">Sama Dengan KTP </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <label for="alamat-surat">Alamat Surat Menyurat: </label>
+                    <input type="text" id="alamat-surat" placeholder="Alamat Surat Menyurat"/>
+                </div>
+                <div class="column">
+                    <label for="rt-rw-surat">RT/RW: </label>
+                    <input type="text" id="rt-rw-surat" placeholder="RT/RW"/>
+                </div>
                 
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <label for="kelurahan-surat">Kelurahan:</label>
+                    <input type="text" id="kelurahan-surat" placeholder="Kelurahan"/>
+                </div>
+                <div class="column">
+                    <label for="kecamatan-surat">Kecamatan: </label>
+                    <input type="text" id="kecamatan-surat" placeholder="Kecamatan"/>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <label for="kota-kabupaten-surat">Kotamadya/Kabupaten:</label>
+                    <input type="text" id="kota-kabupaten-surat" placeholder="Kotamadya/Kabupaten"/>
+                </div>
+            </div>
+
+            <h3>Data Pekerjaan</h3>
+
+
+            <div class="row">
+                <div class="column">
+                    <label for="pekerjaan">Pekerjaan: </label>
+                    <input type="text" id="Pekerjaan" placeholder="Pekerjaan"/>
+                </div>
+                <div class="column">
+                    <label for="no-telepon-kantor">No. Telepon Kantor: </label>
+                    <input type="text" id="no-telepon-kantor" placeholder="No. Telepon Kantor"/>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="alamat-kantor">Alamat Surat Kantor: </label>
+                    <input type="text" id="alamat-kantor" placeholder="Alamat Surat Kantor"/>
+                </div>
+                <div class="column">
+                    <label for="rt-rw-kantor">RT/RW: </label>
+                    <input type="text" id="rt-rw-kantor" placeholder="RT/RW"/>
+                </div>
+                
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <label for="kelurahan-kantor">Kelurahan:</label>
+                    <input type="text" id="kelurahan-kantor" placeholder="Kelurahan"/>
+                </div>
+                <div class="column">
+                    <label for="kecamatan-kantor">Kecamatan: </label>
+                    <input type="text" id="kecamatan-kantor" placeholder="Kecamatan"/>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <label for="kota-kabupaten-kantor">Kotamadya/Kabupaten:</label>
+                    <input type="text" id="kota-kabupaten-kantor" placeholder="Kotamadya/Kabupaten"/>
+                </div>
+            </div>
+
+            <h3>Orang Yang Dapat Dihubungi</h3>
+
+            <div class="row">
+                <div class="column">
+                    <label for="nama-kerabat">Nama: </label>
+                    <input type="text" id="nama-kerabat" placeholder="Nama"/>
+                </div>
+                <div class="column">
+                    <label for="hubungan">Hubungan:</label>
+                    <select id='hubungan' placeholder='Hubungan' >
+                        <option>--Hubungan--</option>
+                        <option>Orang Tua</option>
+                        <option>Suami</option>
+                        <option>Istri</option>
+                        <option>Anak</option>
+                        <option>Saudara</option>
+                        <option>Teman</option>
+                        <option>Lainnya</option>
+                    </select>
+                    
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <label for="no-telepon-kerabat">No. Telepon: </label>
+                    <input type="text" id="no-telepon-kerabat" placeholder="No. Telepon"/>
+                </div>
+                <div class="column">
+                    <label for="email-kerabat">Alamat Email: </label>
+                    <input type="email" id="email-kerabat" placeholder="Alamat Email"/>
+                </div>
             </div>
 
 

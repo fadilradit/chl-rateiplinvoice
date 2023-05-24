@@ -1,0 +1,240 @@
+#unit-main{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    align-items: center;
+    max-height: calc(100vh);
+    width: 100%;
+    /* background-color: #154734; */
+}
+
+
+
+/* scroll set start */
+
+#unit-id::-webkit-scrollbar {
+    width: 11px;
+  }
+  
+  #unit-id::-webkit-scrollbar-track {
+    background: #154734;
+  }
+  
+  #unit-id::-webkit-scrollbar-thumb {
+    background-color: #f3f0dd;
+    border-radius: 6px;
+    border: 3px solid #154734;
+  }
+
+  /* scroll set end */
+
+
+
+
+  /* Tabel Set Start */
+
+
+  table.greyGridTable {
+    border: 2px solid #FFFFFF;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  table.greyGridTable td, table.greyGridTable th {
+    border: 1px solid #FFFFFF;
+    padding: 3px 4px;
+  }
+  table.greyGridTable tbody td {
+    font-size: 16px;
+  }
+  /* table.greyGridTable td:nth-child(even) {
+    background: #EBEBEB;
+  } */
+  table.greyGridTable thead {
+    background: #fce9e9;
+    border-bottom: 4px solid #333333;
+  }
+  table.greyGridTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    /* border-left: 2px solid #333333; */
+  }
+  table.greyGridTable thead th:first-child {
+    border-left: none;
+  }
+  
+  table.greyGridTable tfoot td {
+    font-size: 14px;
+  }  
+  table.greyGridTable tfoot td {
+    font-size: 14px;
+  }  
+  table.greyGridTable  tbody tr:hover {
+    cursor: pointer;
+    background-color: #d5dad8;
+  }  
+  
+
+  /* Tabel Set End */
+
+
+
+  .unit-container{
+    /* background-color: aqua; */
+    width: 98%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /* Modal Set Start */
+
+
+  /* .profile-content .profile-detail .profile-detailButton .profile-editButton:active .profile-modal{
+    display: unset;
+} */
+
+ .profile-modal{
+    background-color: rgb(184, 187, 180, 0.4);
+    height: 100%;
+    width: 100%;
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    display: none;
+    
+    
+}
+
+ .profile-modal .profile-modalContent{
+    margin-top: 20px;
+    background-color: rgb(184, 187, 180);
+    padding: 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 0 30px 0 ;
+
+}
+
+ .profile-modal .profile-editForm{
+    display: flex;
+    flex-direction: column;
+}
+
+ .profile-modal h1{
+    font-size: larger;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+ .profile-modal .profile-editForm label,input,select{
+    margin-bottom: 8px;
+}
+
+ .profile-modal .profile-editForm input,select{
+    border-radius: 8px;
+    height: 30px;
+    background-color: rgb(233, 232, 232);
+}
+
+ .profile-modal .profile-editForm .form-button{
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+ .profile-modal .profile-editForm .form-button button{
+    /* background-color: aqua; */
+    width: 35%;
+    font-weight: 700;
+    color: rgb(233, 232, 232);
+}
+
+ .profile-modal .profile-editForm .form-button .profile-save{
+    background-color: rgb(6, 71, 17);
+}
+
+.profile-modal .profile-editForm .form-button .profile-cancel{
+    background-color: rgb(124, 39, 39);
+}
+
+@media  screen and (max-width:1024px) {
+    
+   .profile-modal .profile-modalContent{
+      width: 40%;
+  }
+
+  
+
+ 
+  
+
+
+}
+
+@media  screen and (max-width:700px){
+   .profile-modal .profile-modalContent{
+      width: 70%;
+  }
+}
+
+@media  screen and (max-width:568px){
+
+  
+
+  
+  
+  .profile-modal .profile-modalContent{
+      width: 80%;
+      height: 200px;
+      overflow: scroll;
+  }
+
+   .profile-modal .profile-editForm .form-button button{
+      width: 45%;
+  }
+
+
+}
+
+@media  screen and (max-width:430px){
+
+  .profile-modal .profile-modalContent{
+      width: 80%;
+      height: fit-content;
+      overflow: hidden;
+  }
+
+  .profile-modal .profile-editForm .form-button button{
+      width: 45%;
+  }
+
+   .profile-modal .profile-modalContent{
+      width: 90%;
+  }
+
+   
+
+}
+
+
+  /* Modal Set End */

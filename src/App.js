@@ -9,14 +9,36 @@ import Product from './pages/Product.jsx';
 import ProductList from './pages/ProductList.jsx';
 import NewCustomer from './pages/Sales/NewCustomer';
 import Sales from './pages/Sales/Sales';
+import Unit from './pages/Sales/Unit';
+import Login from './pages/Login/Login';
 
 const App = () => {
-  return (
-    <BrowserRouter>
+
+
+  const logout = () => {
+    return(
+      <BrowserRouter>
+      
+        <Routes>
+          
+          <Route path="/" element={<Login />} />
+        
+        </Routes>
+      
+    </BrowserRouter>
+    )
+  }
+
+  const login = () => {
+
+    return(
+
+      <BrowserRouter>
       <Sidebar>
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/unit" element={<Unit />} />
           <Route path="/sales" element={<Sales/>} />
           <Route path="/newcustomer" element={<NewCustomer />} />
           <Route path="/comment" element={<Comment />} />
@@ -26,7 +48,48 @@ const App = () => {
         </Routes>
       </Sidebar>
     </BrowserRouter>
-  );
+
+    )
+
+  }
+
+  if (window.localStorage.getItem('TokenCHL') === null) {
+    return(
+      <BrowserRouter>
+      
+        <Routes>
+          
+          <Route path="/" element={<Login />} />
+        
+        </Routes>
+      
+    </BrowserRouter>
+    )
+    
+  }else{
+    return(
+
+      <BrowserRouter>
+      <Sidebar>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/unit" element={<Unit />} />
+          <Route path="/sales" element={<Sales/>} />
+          <Route path="/newcustomer" element={<NewCustomer />} />
+          <Route path="/comment" element={<Comment />} />
+          <Route path="/invoice" element={<Invoice />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/productList" element={<ProductList />} />
+        </Routes>
+      </Sidebar>
+    </BrowserRouter>
+
+    )
+  }
+
+
+  
 };
 
 export default App;

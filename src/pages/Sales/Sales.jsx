@@ -18,18 +18,18 @@ class Sales extends Component{
                         <FaUserPlus size={100} color='#ffffff'/>
                         <h3>Pendaftaran</h3>
                     </Link>
-                    <Link to="/newcustomer" className='card-link' >
+                    <Link to="/unit" className='card-link' >
                         <FaHouseUser size={100} color='#ffffff'/>
                         <h3>Unit</h3>
                     </Link>
-                    <Link to="/newcustomer" className='card-link' >
+                    {/* <Link to="/newcustomer" className='card-link' >
                         <FaUserPlus size={100} color='#ffffff'/>
                         <h3>Pendaftaran</h3>
                     </Link>
                     <Link to="/newcustomer" className='card-link' >
                         <FaUserPlus size={100} color='#ffffff'/>
                         <h3>Pendaftaran</h3>
-                    </Link>
+                    </Link> */}
 
                 </section>
             </main>

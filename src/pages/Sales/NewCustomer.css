@@ -10,6 +10,8 @@
 
 }
 
+/* scroll set start */
+
 #newcustomer-container::-webkit-scrollbar {
     width: 11px;
   }
@@ -23,6 +25,9 @@
     border-radius: 6px;
     border: 3px solid #154734;
   }
+
+  /* scroll set end */
+
 
 .arrow-back{
     margin-top: 50px;

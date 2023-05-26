@@ -11,6 +11,7 @@ import NewCustomer from './pages/Sales/NewCustomer';
 import Sales from './pages/Sales/Sales';
 import Unit from './pages/Sales/Unit';
 import Login from './pages/Login/Login';
+import DaftarIPL from './pages/Invoice/DaftarIPL';
 
 const App = () => {
 
@@ -79,6 +80,7 @@ const App = () => {
           <Route path="/newcustomer" element={<NewCustomer />} />
           <Route path="/comment" element={<Comment />} />
           <Route path="/invoice" element={<Invoice />} />
+          <Route path="/daftaripl" element={<DaftarIPL />} />
           <Route path="/product" element={<Product />} />
           <Route path="/productList" element={<ProductList />} />
         </Routes>

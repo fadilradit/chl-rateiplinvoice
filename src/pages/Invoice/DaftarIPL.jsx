@@ -1,50 +1,29 @@
-import React, {Component, useState} from "react";
+import React from "react";
 import {
     FaArrowLeft
 } from 'react-icons/fa'
 import {useNavigate} from 'react-router-dom'
-import { Link } from "react-router-dom";
 
-import './Unit.css'
 
-const Unit = () => {
+
+const DaftarIPL = () => {
+
     const navigate = useNavigate()
-    const [custId, setCustId] = useState("")
 
+    return(
 
-
-    const openModalHandler = (e) => {
-        const modal = document.getElementById("profile-modal")
-        modal.style.display = "flex"
-        setCustId(e)
-        // console.log(e);
-        
-        
-      
-      
-      }
-      
-    const  closeModalHandler = () => {
-        document.getElementById("profile-modal").style.display = "none"
-        setCustId("")
-      }
-    
-
-    console.log(custId);
-    
-        return(
-            <main id="unit-main" >
+        <main id="unit-main" >
                 <div className="unit-container" >
                     <FaArrowLeft className='arrow-back' size={25} onClick={() => {navigate(`/sales`)}} />
                     <section className="search-group" >
 
                         <input type="search" placeholder="Cari No. Reservasi/Nama" className="search-box" />
-                        <button className="search-button" onClick = {openModalHandler}  >Cari</button>
+                        <button className="search-button" >Cari</button>
 
                     </section>
 
                     <section className="list-antrian" >
-                        <h1>Pilih Unit</h1>
+                    <h1>Daftar IPL Rate Baru</h1>
                         
                     <table class="greyGridTable">
                         <thead>
@@ -55,17 +34,17 @@ const Unit = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr onClick={() => {openModalHandler("1")}} >
+                            <tr>
                                 <td>1</td>
                                 <td>123</td>
                                 <td>asd</td>
                             </tr>
-                            <tr onClick={() => {openModalHandler("2")}} >
+                            <tr>
                                 <td>2</td>
                                 <td>123</td>
                                 <td>asd</td>
                             </tr>
-                            <tr onClick={() => {openModalHandler("3")}} >
+                            <tr>
                                 <td>3</td>
                                 <td>123</td>
                                 <td>asd</td>
@@ -85,7 +64,7 @@ const Unit = () => {
 
                     <div className = "profile-modal" id = "profile-modal" >
                 <div className = "profile-modalContent" >
-                  <h1>Pilih Unit Untuk {custId}</h1>
+                  <h1>Pilih Unit Untuk</h1>
                   <div className = "profile-editForm" >
                     
                     <label>Cluster: </label>
@@ -100,7 +79,7 @@ const Unit = () => {
                     </select>
                     <div className = "form-button" > 
                     <button className = "profile-save btn "  >Simpan</button>
-                    <button className = "profile-cancel  btn" id = "profile-cancel" onClick = {closeModalHandler}  >Batalkan</button>
+                    <button className = "profile-cancel  btn" id = "profile-cancel">Batalkan</button>
                     </div>
                   </div>
                 </div>
@@ -115,9 +94,9 @@ const Unit = () => {
                     </section>
                 </div>
             </main>
-        )
-    
+
+    )
 
 }
 
-export default Unit;
+export default DaftarIPL

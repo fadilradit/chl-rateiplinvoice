@@ -15,7 +15,7 @@ class Invoice extends Component{
 
                 <section className='sales-group-card' >
 
-                    <Link to="/newcustomer" className='card-link' >
+                    <Link to="/daftaripl" className='card-link' >
                         <AiOutlineFileAdd size={100} color='#ffffff'/>
                         <h3>Daftar</h3>
                     </Link>
